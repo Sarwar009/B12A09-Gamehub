@@ -11,7 +11,7 @@ A responsive App Store-style web application where users can explore apps, view 
 ---
 
 ## 🖼 Screenshot
-<img height="400" alt="ChatGPT Image Nov 19, 2025, 12_10_38 AM" src="https://github.com/user-attachments/assets/eebedeb2-37aa-4d63-959a-ded87663bf6b" />
+<img width="full" height="400" alt="ChatGPT Image Nov 19, 2025, 12_10_38 AM" src="https://github.com/user-attachments/assets/eebedeb2-37aa-4d63-959a-ded87663bf6b" />
 
 ---
 
