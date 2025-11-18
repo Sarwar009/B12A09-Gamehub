@@ -1,4 +1,4 @@
-# App Store
+# Gamehub
 
 A responsive App Store-style web application where users can explore apps, view details, and interact with a clean UI.
 
