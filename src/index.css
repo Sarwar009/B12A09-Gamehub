@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+@keyframes bounceY {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-30px); }
+        }
+        @keyframes wave {
+          0%, 100% { transform: rotate(0deg); }
+          25% { transform: rotate(15deg); }
+          75% { transform: rotate(-15deg); }
+        }
+        @keyframes float {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-20px); }
+        }
+        @keyframes fadeIn {
+          0% { opacity: 0; }
+          100% { opacity: 1; }
+        }
+
+        .active {
+          color: antiquewhite;
+        }
+        .swiper-navigation-icon {
+          display: none;
+        }
