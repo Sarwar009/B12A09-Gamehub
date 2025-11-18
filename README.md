@@ -1,26 +1,24 @@
+# App Store
 
----
-
-# 2️⃣ **App Store (ph-B12A08-App-Store)**
-
-```md
-# App Store Website
-
-## 📌 Overview
 A responsive App Store-style web application where users can explore apps, view details, and interact with a clean UI.
 
 ---
 
-## 🖼️ Screenshot
+## 🚀 Live Site
+👉 **Live Link:** https://gamehubsarwar.netlify.app/
+
+---
+
+## 🖼 Screenshot
 <img width="800" height="400" alt="ChatGPT Image Nov 19, 2025, 12_10_38 AM" src="https://github.com/user-attachments/assets/eebedeb2-37aa-4d63-959a-ded87663bf6b" />
 
 ---
 
-## 🚀 Technologies Used
+## 🧰 Technology Used
 - React.js  
 - React Router  
 - TailwindCSS  
-- Context API  
+- Context API 
 
 ---
 
@@ -39,3 +37,30 @@ A responsive App Store-style web application where users can explore apps, view 
   "react-router-dom": "^6",
   "tailwindcss": "^3"
 }
+```
+
+---
+
+## 🛠 Local Setup
+1. Clone the repo:
+```sh
+git clone https://github.com/Sarwar009/ph-B12A08-App-Store
+```
+
+2. Install dependencies:
+```sh
+npm install
+```
+
+4. Run:
+```sh
+npm run dev
+```
+
+---
+
+## 🧑‍💻 Author
+**Golam Sarwar**  
+GitHub: https://github.com/Sarwar009
+
+
