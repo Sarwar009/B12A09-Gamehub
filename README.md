@@ -6,7 +6,7 @@ A responsive App Store-style web application where users can explore apps, view 
 
 ## 🚀 Live Site
 👉 **Live Link:** https://gamehubsarwar.netlify.app/
-👉 **Live Link:** https://github.com/Sarwar009/B12A09-Gamehub
+👉 **Github Link:** https://github.com/Sarwar009/B12A09-Gamehub
 
 ---
 
@@ -48,12 +48,17 @@ A responsive App Store-style web application where users can explore apps, view 
 git clone https://github.com/Sarwar009/ph-B12A08-Gamehub
 ```
 
-2. Install dependencies:
+2. Navigate to folder:
+```sh
+cd ph-B12A08-Gamehub
+```
+
+3. Install dependencies:
 ```sh
 npm install
 ```
 
-3. Run:
+4. Run:
 ```sh
 npm run dev
 ```
