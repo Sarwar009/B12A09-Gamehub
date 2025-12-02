@@ -21,7 +21,7 @@
         }
 
         .active {
-          color: antiquewhite;
+          color: oklch(74% 0.16 232.661);
         }
         .swiper-navigation-icon {
           display: none;

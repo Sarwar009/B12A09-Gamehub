@@ -14,6 +14,8 @@ import UpdateProfile from '../pages/UpdateProfile';
 import Profile from '../pages/Profile';
 import NewsletterPage from '../pages/NewsletterPage';
 import Popular from '../pages/Popular';
+import AboutPage from '../pages/About';
+import Support from '../pages/Support';
 
 const Router = createBrowserRouter([
     {
@@ -66,6 +68,14 @@ const Router = createBrowserRouter([
             {
                 path: "/popular",
                 element: <Popular />
+            },
+            {
+                path: "/about",
+                element:<AboutPage />
+            },
+            {
+                path: "/support",
+                element:<Support/>
             }
         ]
     },
