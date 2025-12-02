@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -16,10 +16,11 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-3">Useful Links</h4>
           <ul className="space-y-2 text-sm">
-            <li><Link to="/" className="hover:underline">Home</Link></li>
-            <li><Link to="/items" className="hover:underline">All Items</Link></li>
-            <li><Link to="/about" className="hover:underline">About</Link></li>
-            <li><Link to="/contact" className="hover:underline">Contact</Link></li>
+            <li><NavLink to="/" className="hover:underline">Home</NavLink></li>
+            <li><NavLink to="/popular" className="hover:underline">Popular Games</NavLink></li>
+            <li><NavLink to="/items" className="hover:underline">All Items</NavLink></li>
+            <li><NavLink to="/about" className="hover:underline">About</NavLink></li>
+            <li><NavLink to="/contact" className="hover:underline">Contact</NavLink></li>
           </ul>
         </div>
 

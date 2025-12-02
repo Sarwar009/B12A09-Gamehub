@@ -1,9 +1,13 @@
 import React, {useEffect, useState} from 'react';
+import { motion } from "framer-motion";
 import Slider from '../components/Slider';
 import {Data} from '../data/Data';
 import Newsletter from '../components/Newsletter';
 import {Link} from 'react-router-dom';
 import GameCard from '../components/GameCard';
+import CategoryCard from '../components/CategoryCard';
+import Blogs from '../components/Blogs';
+import ChooseUs from '../components/ChooseUs';
 
 const Home = () => {
   const [games, setGames] = useState ([]);
@@ -41,12 +45,16 @@ const Home = () => {
 
       <div id="popular" className="mt-10 w-11/12 mx-auto">
         <h3 className="text-2xl font-bold m-4">Popular Games</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <motion.div 
+        initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {popular.map ((game) => (
             <GameCard key={game.id} game={game} />
           ))}
 
-        </div>
+        </motion.div>
         <button className="flex py-9 mx-auto">
           <Link
             to="/all-games"
@@ -55,8 +63,18 @@ const Home = () => {
             See More
           </Link>
         </button>
+          {/* Category Section */}
+          <CategoryCard />
+
+{/* Why Choose Us Section */}
+          <ChooseUs />
+{/* Blog Section */}
+          <Blogs />
+{/* Newsletter Section */}
         <Newsletter />
       </div>
+
+      
     </div>
   );
 };

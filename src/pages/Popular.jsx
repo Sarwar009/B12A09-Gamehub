@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Data} from '../data/Data';
 import GameCard from '../components/GameCard';
 import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
 
 const Popular = () => {
   const [games, setGames] = useState ([]);
@@ -35,12 +36,16 @@ const Popular = () => {
   return (
     <div id="popular" className="mt-10 w-11/12 mx-auto">
       <h3 className="text-2xl font-bold m-4 text-center my-6">Popular Games</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <motion.div 
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {popular.map ((game, index) => (
           <GameCard key={game.id} game={game} index={index} />
         ))}
 
-      </div>
+      </motion.div>
       <button className="flex py-9 mx-auto">
         <Link
           to="/all-games"
