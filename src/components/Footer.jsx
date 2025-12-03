@@ -27,9 +27,9 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-3">Follow Us</h4>
           <div className="flex gap-3">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="text-slate-300 hover:text-white">Facebook</a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-slate-300 hover:text-white">LinkedIn</a>
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="text-slate-300 hover:text-white">GitHub</a>
+            <a href="https://wa.me/8801998787793" target="_blank" rel="noreferrer" className="text-slate-300 hover:text-white">WhatsApp</a>
+            <a href="https://linkedin.com/in/sarwar009" target="_blank" rel="noreferrer" className="text-slate-300 hover:text-white">LinkedIn</a>
+            <a href="https://github.com/sarwar009" target="_blank" rel="noreferrer" className="text-slate-300 hover:text-white">GitHub</a>
           </div>
         </div>
       </div>
