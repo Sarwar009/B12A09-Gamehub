@@ -44,7 +44,7 @@ const Home = () => {
       <Slider slides={games.slice (0, 5)} />
 
       <div id="popular" className="mt-10 w-11/12 mx-auto">
-        <h2 className="text-3xl font-bold text-center">Popular Games</h2>
+        <h2 className="text-3xl font-bold text-center pb-8">Popular Games</h2>
         <motion.div
           initial={{opacity: 0, y: 40}}
           whileInView={{opacity: 1, y: 0}}

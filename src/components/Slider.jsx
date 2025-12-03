@@ -18,7 +18,7 @@ export default function BannerSlider({slides = []}) {
     >
       {slides.map (s => (
         <SwiperSlide key={s.id}>
-          <div className="relative w-full h-64 sm:h-100 md:h-115">
+          <div className="relative w-full h-64 sm:h-100 md:h-[70vh]">
             <img
               src={s.coverPhoto}
               alt={s.title}
