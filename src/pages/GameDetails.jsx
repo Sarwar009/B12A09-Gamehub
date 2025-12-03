@@ -16,15 +16,16 @@ export default function GameDetails () {
 
   return (
     <div className="max-w-4xl mx-auto p-6 bg-slate-800 rounded mt-8">
-      <div className="flex flex-col md:flex-row gap-6">
-        <img
+    <img
           src={game.coverPhoto}
           alt={game.title}
-          className="w-full md:w-60 h-60 object-cover rounded"
+          className="w-full  object-cover rounded"
         />
+      <div className="flex flex-col md:flex-row gap-6">
+        
         <div>
-          <h1 className="text-2xl font-bold">{game.title}</h1>
-          <p className="text-slate-300 mt-2">{game.description}</p>
+          <h1 className="text-2xl font-bold py-3">{game.title}</h1>
+          <p className="text-slate-300 mt-2">{game.longDescription}</p>
           <p className="mt-4">Category: <strong>{game.category}</strong></p>
           <p>Developer: <strong>{game.developer}</strong></p>
           <p>Rating: <strong>{game.ratings}</strong></p>

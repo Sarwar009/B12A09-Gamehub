@@ -16,7 +16,7 @@ const Profile = () => {
         <div>
           <h2 className="text-2xl font-bold">{user.displayName || "No name set"}</h2>
           <p className="text-slate-300 mt-1">{user.email}</p>
-          <Link to="/profile/update" className="mt-4 inline-block px-3 py-1 border rounded">Update Information</Link>
+          <Link to="/profile/update" className="mt-5 rounded btn btn-warning">Update Information</Link>
         </div>
       </div>
     </div>

@@ -40,9 +40,9 @@ export default function Navbar() {
           </NavLink>
           <button
             onClick={() => logout()}
-            className="text-sm px-3 py-1 rounded btn btn-info border-none btn-sm hover:bg-red-600"
+            className="text-sm px-3 py-1 rounded btn bg-black text-white border-none btn-sm hover:bg-gray-500"
           >
-            <NavLink to="/login">Logout</NavLink>
+            <NavLink to="/">Logout</NavLink>
           </button>
         </div>
       )}

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { motion } from "framer-motion";
+import {motion} from 'framer-motion';
 import Slider from '../components/Slider';
 import {Data} from '../data/Data';
 import Newsletter from '../components/Newsletter';
@@ -45,14 +45,13 @@ const Home = () => {
 
       <div id="popular" className="mt-10 w-11/12 mx-auto">
         <h3 className="text-2xl font-bold m-4">Popular Games</h3>
-        <motion.div 
-        initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {popular.map ((game) => (
-            <GameCard key={game.id} game={game} />
-          ))}
+        <motion.div
+          initial={{opacity: 0, y: 40}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{duration: 0.8, ease: 'easeOut'}}
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
+        >
+          {popular.map (game => <GameCard key={game.id} game={game} />)}
 
         </motion.div>
         <button className="flex py-9 mx-auto">
@@ -63,18 +62,17 @@ const Home = () => {
             See More
           </Link>
         </button>
-          {/* Category Section */}
-          <CategoryCard />
+        {/* Category Section */}
+        <CategoryCard />
 
-{/* Why Choose Us Section */}
-          <ChooseUs />
-{/* Blog Section */}
-          <Blogs />
-{/* Newsletter Section */}
+        {/* Why Choose Us Section */}
+        <ChooseUs />
+        {/* Blog Section */}
+        <Blogs />
+        {/* Newsletter Section */}
         <Newsletter />
       </div>
 
-      
     </div>
   );
 };

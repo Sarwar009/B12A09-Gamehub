@@ -46,14 +46,6 @@ const Popular = () => {
         ))}
 
       </motion.div>
-      <button className="flex py-9 mx-auto">
-        <Link
-          to="/all-games"
-          className="w-full btn btn-primary flex items-center justify-center rounded-lg hover:shadow-xl transition-shadow duration-300"
-        >
-          All Games
-        </Link>
-      </button>
     </div>
   );
 };

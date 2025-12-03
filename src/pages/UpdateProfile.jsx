@@ -24,7 +24,7 @@ const UpdateProfile = () => {
   }
 
   return (
-    <div className="max-w-md mx-auto mt-12 p-6 bg-slate-800 rounded">
+    <div className="max-w-md mx-auto mt-12 p-6 bg-slate-800 rounded shadow-lg my-6">
       <h2 className="text-xl font-bold mb-4">Update Info</h2>
       <form onSubmit={handleSubmit} className="space-y-3">
         <input
@@ -37,7 +37,7 @@ const UpdateProfile = () => {
           placeholder="Photo URL"
           className="w-full p-2 rounded bg-slate-700"
         />
-        <button className="px-4 py-2 bg-indigo-600 rounded">
+        <button className="px-4 py-2 rounded btn btn-accent">
           Update Information
         </button>
       </form>

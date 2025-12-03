@@ -1,20 +1,23 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { features } from "../data/LandingPageData";
+import React from 'react';
+import {motion} from 'framer-motion';
+import {features} from '../data/LandingPageData';
 
 const ChooseUs = () => {
   return (
     <div className="py-12 md:py-[90px]">
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+        initial={{opacity: 0, y: 40}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{duration: 0.8, ease: 'easeOut'}}
         className="space-y-8"
       >
         <h2 className="text-3xl font-bold text-center">Why Choose Us</h2>
         <div className="grid md:grid-cols-3 gap-6">
-          {features.map((feat, idx) => (
-            <div
+          {features.map ((feat, idx) => (
+            <motion.div
+              initial={{opacity: 0, y: 40}}
+              whileInView={{opacity: 1, y: 0}}
+              transition={{duration: 0.8, ease: 'easeOut'}}
               key={idx}
               className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow text-center hover:scale-105 transition-transform"
             >
@@ -27,7 +30,7 @@ const ChooseUs = () => {
               <p className="text-gray-600 dark:text-gray-300 text-sm">
                 {feat.desc}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </motion.div>

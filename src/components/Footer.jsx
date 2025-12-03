@@ -18,7 +18,7 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             <li><NavLink to="/" className="hover:underline">Home</NavLink></li>
             <li><NavLink to="/popular" className="hover:underline">Popular Games</NavLink></li>
-            <li><NavLink to="/items" className="hover:underline">All Items</NavLink></li>
+            <li><NavLink to="/all-games" className="hover:underline">All Games</NavLink></li>
             <li><NavLink to="/about" className="hover:underline">About</NavLink></li>
             <li><NavLink to="/contact" className="hover:underline">Contact</NavLink></li>
           </ul>
