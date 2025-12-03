@@ -44,7 +44,7 @@ const Home = () => {
       <Slider slides={games.slice (0, 5)} />
 
       <div id="popular" className="mt-10 w-11/12 mx-auto">
-        <h3 className="text-2xl font-bold m-4">Popular Games</h3>
+        <h2 className="text-3xl font-bold text-center">Popular Games</h2>
         <motion.div
           initial={{opacity: 0, y: 40}}
           whileInView={{opacity: 1, y: 0}}
@@ -54,14 +54,18 @@ const Home = () => {
           {popular.map (game => <GameCard key={game.id} game={game} />)}
 
         </motion.div>
-        <button className="flex py-9 mx-auto">
+        <motion.button
+          initial={{opacity: 0, y: 40}}
+                    whileInView={{opacity: 1, y: 0}}
+                    transition={{duration: 0.8, ease: 'easeOut'}}
+         className="flex py-9 mx-auto">
           <Link
             to="/all-games"
             className="w-full btn btn-primary flex items-center justify-center rounded-lg hover:shadow-xl transition-shadow duration-300"
           >
             See More
           </Link>
-        </button>
+        </motion.button>
         {/* Category Section */}
         <CategoryCard />
 
